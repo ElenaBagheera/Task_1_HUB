@@ -1,0 +1,101 @@
+/*Responsive CSS Layout*/
+@media only screen and (max-width: 1023px){
+	
+}
+@media only screen and (max-width: 767px) {
+	
+}
+@media only screen and (max-width: 419px) {
+	
+}
+/*Ordinary CSS properties*/
+body {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+nav {
+  width: auto;
+  height: 42px;
+  background-color: rgba(0,0,0,0.8);
+  border: 0.2px solid #FFFFFF;
+}
+.nav-bar {
+	width: 70%;
+	height: auto;
+	margin: auto;
+}
+nav ul li {
+  display: inline-block;
+  padding-right: 7%;
+}
+nav ul li a {
+	text-decoration: none;
+	font-family: 'Myriad Set Pro', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    font-size: 0.8em;
+	text-align: left;
+    color: #FFFFFF;
+
+}
+.image-section{
+	width: 50%;
+	float: left;
+}
+.clearfix:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.image-section img {
+	width: 80%;
+	position: relative;
+	top: 85px;
+	left: 30%;
+}
+.text-section {
+	width: 50%;
+	float: right;
+}
+.text-section img {
+	position: relative;
+	top: 200px;
+	left: 18%;
+	width: 25%;
+}
+.clearfix:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.text-section .text {
+	width: 36%;
+    position: relative;
+	top: 190px;
+	left: 13%;
+}
+.text-section h1 {
+	font-family:'Myriad Set Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1.4em;
+	font-weight: normal;
+}
+.text-section h2{
+	font-family:'Myriad Set Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1.4em;
+	font-weight: normal;
+	text-align: center;
+}
+.text-section h2 a {
+	text-decoration: none;
+	color: rgb(0, 136, 300);
+}
+.text-section h2 a:hover {
+	color: #000000;
+}
+.image img {
+	display: inline-block;
+	width: 49.8%;
+	padding:0;
+	margin: 0;
+	z-index: 10;
+}
+
