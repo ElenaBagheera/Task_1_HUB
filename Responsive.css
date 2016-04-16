@@ -1,14 +1,4 @@
-/*Responsive CSS Layout*/
-@media only screen and (max-width: 1023px){
-	
-}
-@media only screen and (max-width: 767px) {
-	
-}
-@media only screen and (max-width: 419px) {
-	
-}
-/*Ordinary CSS properties*/
+/*Desktop CSS properties*/
 body {
 	width: 100%;
 	padding: 0;
@@ -21,81 +11,165 @@ nav {
   border: 0.2px solid #FFFFFF;
 }
 .nav-bar {
-	width: 70%;
-	height: auto;
+	width: 98%;
+	height: inherit;
 	margin: auto;
+}
+nav ul {
+	text-align: justify;
+	padding-left: 18%;
 }
 nav ul li {
   display: inline-block;
-  padding-right: 7%;
+  padding-right: 5%;
+  text-align: center;
 }
 nav ul li a {
 	text-decoration: none;
 	font-family: 'Myriad Set Pro', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
     font-size: 0.8em;
-	text-align: left;
     color: #FFFFFF;
-
 }
-.image-section{
+nav ul li a:hover {
+	color: #666;
+}
+.main-image {
+	width: 100%;
+	overflow: hidden;
+}
+.image-section, .text-section {
 	width: 50%;
 	float: left;
 }
-.clearfix:after{
-    content: '';
-    display: table;
-    clear: both;
+.image-section .content-image {
+	width: 75%;
+	height: auto;
+	content: url("http://images.apple.com/v/home/cl/images/heros/iphone_se_medium.jpg");
+	padding-left: 31%;
+	padding-top: 13.5%;
 }
-.image-section img {
-	width: 80%;
-	position: relative;
-	top: 85px;
-	left: 30%;
-}
-.text-section {
-	width: 50%;
-	float: right;
-}
-.text-section img {
-	position: relative;
-	top: 200px;
-	left: 18%;
+.text-section .name {
 	width: 25%;
-}
-.clearfix:after{
-    content: '';
-    display: table;
-    clear: both;
-}
+	height: auto;
+	content: url("http://images.apple.com/v/home/cl/images/logos/iphone_se_medium.png"); 
+	padding-top: 30%;
+	margin-right: 60%;
+	margin-left: 12%;
+}	
 .text-section .text {
-	width: 36%;
-    position: relative;
-	top: 190px;
-	left: 13%;
+	width: 100%;
+	height: auto;
+	padding-left: 6%;
+	padding-top: 1%;
 }
 .text-section h1 {
 	font-family:'Myriad Set Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 1.4em;
+	font-size: 1.8em;
 	font-weight: normal;
 }
-.text-section h2{
+.text-section .links {
+	width: 100%;
+	height: auto;
+	padding-left: 13%;
+	padding-top: 0;	
+}
+.text-section .links a, .text-section .links1 a  {
+	text-decoration: none;
+	color: rgb(0, 136, 300);
 	font-family:'Myriad Set Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 1.4em;
+	font-size: 1.8em;
 	font-weight: normal;
 	text-align: center;
 }
-.text-section h2 a {
-	text-decoration: none;
-	color: rgb(0, 136, 300);
-}
-.text-section h2 a:hover {
+.text-section .links a:hover {
 	color: #000000;
 }
-.image img {
-	display: inline-block;
-	width: 49.8%;
-	padding:0;
-	margin: 0;
-	z-index: 10;
+.text-section .links1 {
+	width: 100%;
+	height: auto;
+	padding-left: 6%;
+	padding-top: 2%;
 }
-
+.text-section .links1 a:hover {
+	color: #000000;
+}
+.secondary-image {
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+.secondary-image div {
+	width: 50%;
+	float: left;
+}
+.secondary-image div img {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding-bottom: 0;
+}
+.adapter-program-link {
+	margin: 0 auto;
+    padding: 19.9px 0;
+    text-align: center;
+	border: 0.1px solid #FFFFFF;
+}
+.adapter-program-link a {
+	font-family:'Myriad Set Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1.125em;
+	color: rgb(0, 136, 300);
+	text-decoration: none;
+}
+.adapter-program-link a:hover {
+	text-decoration: underline;
+}
+footer {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background-color: #f2f2f2;
+}
+.footer {
+	width: 65.67%;
+	margin: 0 auto;
+	padding: 0 1.47%;
+	border: 0.1px solid #f2f2f2;
+}
+.footer div {
+	display: inline-block;
+	width: 19%;
+	vertical-align: top;
+}
+.first-column li, .second-column li, .third-column li, .fourth-column li, .fifth-column li, .more-contacts p {
+	color: #666;
+	font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+	font-size: 0.8em;
+	list-style: none;
+	padding-bottom: 5%;
+	text-align: left;
+}
+li.list-name {
+	color: #000000;
+	font-weight: bold;
+}
+.footer a {
+	text-decoration: none;
+	color: #666;
+}
+.footer a:hover {
+	text-decoration: underline;
+}
+footer div.more-contacts {
+	display: block;
+	width: 100%;
+	padding-left: 4.1%;
+}
+.more-contacts a {
+	color: rgb(0, 136, 300);
+}
+.more-contacts a :hover {
+	color: black;
+	text-decoration: underline;
+}
