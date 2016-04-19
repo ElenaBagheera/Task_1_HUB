@@ -1,4 +1,5 @@
 /*Desktop CSS properties*/
+@media screen and (max-width: 1824px) {
 body {
 	width: 100%;
 	padding: 0;
@@ -11,17 +12,18 @@ nav {
   border: 0.2px solid #FFFFFF;
 }
 .nav-bar {
-	width: 98%;
+	width: 99%;
 	height: inherit;
 	margin: auto;
 }
 nav ul {
+	margin: 0.8% auto;
 	text-align: justify;
 	padding-left: 18%;
 }
 nav ul li {
   display: inline-block;
-  padding-right: 5%;
+  padding-right: 4%;
   text-align: center;
 }
 nav ul li a {
@@ -44,14 +46,15 @@ nav ul li a:hover {
 .image-section .content-image {
 	width: 75%;
 	height: auto;
-	content: url("http://images.apple.com/v/home/cl/images/heros/iphone_se_medium.jpg");
 	padding-left: 31%;
 	padding-top: 13.5%;
 }
+.content-image img {
+	width: 100%;
+}
 .text-section .name {
 	width: 25%;
-	height: auto;
-	content: url("http://images.apple.com/v/home/cl/images/logos/iphone_se_medium.png"); 
+	height: auto; 
 	padding-top: 30%;
 	margin-right: 60%;
 	margin-left: 12%;
@@ -172,4 +175,73 @@ footer div.more-contacts {
 .more-contacts a :hover {
 	color: black;
 	text-decoration: underline;
+}
+}
+@media screen and (max-width: 768px){
+nav ul {
+	margin: 1.1% auto;
+	text-align: justify;
+	padding-left: 8%;
+}
+.text-section .text {
+	width: 100%;
+	height: auto;
+	padding-left: 13%;
+	padding-top: 1%;
+	}
+.text-section h1 {
+	font-family:'Myriad Set Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+	font-weight: normal;
+	}
+.text-section .links a, .text-section .links1 a  {
+	text-decoration: none;
+	color: rgb(0, 136, 300);
+	font-family:'Myriad Set Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+	font-weight: normal;
+	text-align: center;
+}
+.text-section .links {
+	width: 100%;
+	height: auto;
+	padding-left: 20%;
+	padding-top: 0;
+}
+.text-section .links1 {
+	width: 100%;
+	height: auto;
+	padding-left: 11%;
+	padding-top: 2%;
+}
+.footer {
+	width: 98%;
+	margin: 0 auto;
+	padding: 0 1.47%;
+	border: 0.1px solid #f2f2f2;
+}
+}
+@media screen and (max-width: 480px){
+.secondary-image div {
+	width: 100%;
+}
+.footer {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 1.47%;
+	border: 0.1px solid #f2f2f2;
+}
+.footer div {
+	display: inline-block;
+	width: 49%;
+	vertical-align: top;
+	padding-top: 3%;
+}
+.footer.last {
+	position: absolute;
+	top: -50%;
+}
+.footer div ul {
+	margin: 0;
+}
 }
